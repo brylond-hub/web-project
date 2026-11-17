@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Soundboard covers independent music: thoughtful album reviews, artist interviews, and playlists for curious listeners.">
+  <title>The Soundboard — Independent Music Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="brand" href="#home" aria-label="The Soundboard home"><span class="brand-mark" aria-hidden="true">♪</span><span>The Soundboard</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="menu-icon" aria-hidden="true">☰</span><span class="sr-only">Toggle navigation</span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#reviews">Reviews</a><a href="#artists">Artist Spotlights</a><a href="#playlists">Playlists</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Independent music notes / Vol. 01</p>
+        <h1 id="hero-title">Turn it up.<br>Dig deeper.</h1>
+        <p class="hero-intro">Tracking the best beats, albums, and underground sounds.</p>
+        <a class="button button-dark" href="#reviews">Read latest review <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="artwork artwork-hero" role="img" aria-label="Abstract featured album artwork in warm orange and purple tones">
+        <span class="artwork-label">Featured album / artist image</span><span class="issue-tag">Featured / 001</span>
+      </div>
+    </section>
+
+    <section class="archive section wrap" id="reviews" aria-labelledby="archive-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">From the archive</p><h2 id="archive-title">Fresh on the board.</h2></div>
+        <p class="section-note">Reviews, conversations &amp; live moments.</p>
+      </div>
+      <div class="card-grid">
+        <article class="story-card" id="review-story">
+          <div class="artwork art-album" role="img" aria-label="Abstract geometric album artwork"><span class="artwork-label">Album artwork</span></div>
+          <div class="card-content"><span class="tag">Review</span><h3>After Hours, Before Dawn</h3><p>A late-night record that finds beauty in the space between electronic pulse and quiet reflection.</p><a class="text-link" href="#inside-review">Read more <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="story-card" id="artists">
+          <div class="artwork art-portrait" role="img" aria-label="Abstract artist portrait artwork"><span class="artwork-label">Artist portrait</span></div>
+          <div class="card-content"><span class="tag">Interview</span><h3>Meet the Next Wave</h3><p>An emerging artist talks first influences, finding a voice, and making music on their own terms.</p><a class="text-link" href="#inside-interview">Read more <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="story-card" id="playlists">
+          <div class="artwork art-live" role="img" aria-label="Abstract live show artwork"><span class="artwork-label">Live show image</span></div>
+          <div class="card-content"><span class="tag">Live / Playlist</span><h3>Sounds From the Floor</h3><p>The tracks and tiny moments that stayed with us after a night of loud, unforgettable sound.</p><a class="text-link" href="#inside-playlist">Read more <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="inside section wrap" aria-labelledby="inside-title">
+      <p class="eyebrow">Keep reading</p><h2 id="inside-title">Inside the stories.</h2>
+      <div class="story-list">
+        <article id="inside-review"><span class="tag">Review</span><h3>After Hours, Before Dawn</h3><p>Warm synths, spare percussion, and unhurried melodies shape a record built for the journey home. Its most memorable moments know when to leave room for silence.</p></article>
+        <article id="inside-interview"><span class="tag">Interview</span><h3>Meet the Next Wave</h3><p>A conversation about collecting sounds, trusting unfinished ideas, and the small local scenes that make new music possible.</p></article>
+        <article id="inside-playlist"><span class="tag">Live / Playlist</span><h3>Sounds From the Floor</h3><p>From the opening track to the final encore, this is a snapshot of the energy in the room—and a few songs to keep that feeling going.</p></article>
+      </div>
+    </section>
+
+    <section class="newsletter section wrap" id="contact" aria-labelledby="newsletter-title">
+      <div class="newsletter-copy"><p class="eyebrow">Stay in the loop</p><h2 id="newsletter-title">Never miss a good sound.</h2><p>Get weekly music drops straight to your inbox.</p></div>
+      <form class="newsletter-form" id="newsletter-form">
+        <label for="email">Email address</label>
+        <div class="form-row"><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><button class="button button-dark" type="submit">Subscribe <span aria-hidden="true">→</span></button></div>
+        <p class="form-note" id="form-message" aria-live="polite">This demo form does not send or store your email.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <div class="footer-main"><a class="brand" href="#home">The Soundboard <span aria-hidden="true">♪</span></a>
+      <nav class="footer-nav" aria-label="Footer navigation"><a href="#home">Home</a><a href="#reviews">Reviews</a><a href="#artists">Artists</a><a href="#playlists">Playlists</a><a href="#contact">Contact</a></nav>
+      <div class="social-links" aria-label="Social media"><span>Instagram</span><span>Spotify</span><span>YouTube</span></div>
+    </div>
+    <p class="copyright">© 2026 The Soundboard. All rights reserved.</p>
+  </footer>
+</body>
+</html>
